@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/flight-tracker/static/css/main.b100e6da.chunk.css",
-    "main.js": "/flight-tracker/static/js/main.45e366fa.chunk.js",
-    "main.js.map": "/flight-tracker/static/js/main.45e366fa.chunk.js.map",
+    "main.js": "/flight-tracker/static/js/main.3be44983.chunk.js",
+    "main.js.map": "/flight-tracker/static/js/main.3be44983.chunk.js.map",
     "runtime-main.js": "/flight-tracker/static/js/runtime-main.494c3f97.js",
     "runtime-main.js.map": "/flight-tracker/static/js/runtime-main.494c3f97.js.map",
-    "static/js/2.ddeb818d.chunk.js": "/flight-tracker/static/js/2.ddeb818d.chunk.js",
-    "static/js/2.ddeb818d.chunk.js.map": "/flight-tracker/static/js/2.ddeb818d.chunk.js.map",
+    "static/js/2.d543ce31.chunk.js": "/flight-tracker/static/js/2.d543ce31.chunk.js",
+    "static/js/2.d543ce31.chunk.js.map": "/flight-tracker/static/js/2.d543ce31.chunk.js.map",
     "index.html": "/flight-tracker/index.html",
-    "precache-manifest.d5ad877f6a7980f4ffc7e31da614e184.js": "/flight-tracker/precache-manifest.d5ad877f6a7980f4ffc7e31da614e184.js",
+    "precache-manifest.5f3d476a89411cc9ca4952062b3f58be.js": "/flight-tracker/precache-manifest.5f3d476a89411cc9ca4952062b3f58be.js",
     "service-worker.js": "/flight-tracker/service-worker.js",
     "static/css/main.b100e6da.chunk.css.map": "/flight-tracker/static/css/main.b100e6da.chunk.css.map",
     "static/media/321.png": "/flight-tracker/static/media/321.3b85b920.png",
@@ -17,8 +17,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.494c3f97.js",
-    "static/js/2.ddeb818d.chunk.js",
+    "static/js/2.d543ce31.chunk.js",
     "static/css/main.b100e6da.chunk.css",
-    "static/js/main.45e366fa.chunk.js"
+    "static/js/main.3be44983.chunk.js"
   ]
 }
