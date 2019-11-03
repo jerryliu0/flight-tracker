@@ -8,6 +8,7 @@ function App() {
     return (
         <div className="App">
             <img src={Logo} alt='American Airlines' />
+            <h1>American Airlines Flight Tracker</h1>
             <Main />
         </div>
     );

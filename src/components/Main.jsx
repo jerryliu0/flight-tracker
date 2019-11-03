@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import 'date-fns';
 import { MuiPickersUtilsProvider, KeyboardDatePicker } from '@material-ui/pickers'
+import CircularProgress from '@material-ui/core/CircularProgress';
 import DateFnsUtils from '@date-io/date-fns';
 import TextField from '@material-ui/core/TextField';
 
@@ -10,6 +11,7 @@ class Main extends Component {
     initialState = {
         date: new Date(),
         flights: [],
+        firstLoaded: false,
         searchFlightNum: '',
         searchOrigin: '',
         searchDestination: ''
@@ -34,6 +36,7 @@ class Main extends Component {
     handleDateChange = async date => {
         const flightData = await fetch(`https://flight-info.herokuapp.com/flights?date=${this.getFormattedDate(date)}`);
         const flightList = await flightData.json();
+        this.setState({ firstLoaded: true });
         this.setState({ date: date });
         this.setState({ flights: flightList });
     };
@@ -122,7 +125,7 @@ class Main extends Component {
                         variant="outlined"
                     />
                 </div>
-                {filteredFlights.length ? <FlightTable flights={filteredFlights} /> : <h1>No flights found!</h1>}
+                {filteredFlights.length ? <FlightTable flights={filteredFlights} /> : this.state.firstLoaded ? <h1>No flights found!</h1> : <CircularProgress disableShrink />}
             </div>
         );
     }
