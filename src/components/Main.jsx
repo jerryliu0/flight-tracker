@@ -32,7 +32,7 @@ class Main extends Component {
     };
 
     handleDateChange = async date => {
-        const flightData = await fetch(`http://localhost:3030/flights?date=${this.getFormattedDate(date)}`);
+        const flightData = await fetch(`https://flight-info.herokuapp.com/flights?date=${this.getFormattedDate(date)}`);
         const flightList = await flightData.json();
         this.setState({ date: date });
         this.setState({ flights: flightList });
@@ -87,7 +87,8 @@ class Main extends Component {
                         defaultValue=""
                         onChange={this.handleFlightNum}
                         style={{
-                            margin: 10
+                            margin: 10,
+                            minWidth: 250
                         }}
                         margin="normal"
                         variant="outlined"
@@ -100,7 +101,8 @@ class Main extends Component {
                         defaultValue=""
                         onChange={this.handleOrigin}
                         style={{
-                            margin: 10
+                            margin: 10,
+                            minWidth: 250
                         }}
                         margin="normal"
                         variant="outlined"
@@ -113,7 +115,8 @@ class Main extends Component {
                         defaultValue=""
                         onChange={this.handleDestination}
                         style={{
-                            margin: 10
+                            margin: 10,
+                            minWidth: 250
                         }}
                         margin="normal"
                         variant="outlined"
